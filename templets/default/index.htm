@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="author" content="order by dede58.com" />
+<link href="/skin/images/longhua.css" rel="stylesheet" type="text/css">
+<script src="/skin/images/jquery-1.8.3.js"></script>
+<script language="javascript" type="text/javascript" src="/skin/images/ss.js"></script>
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/index.php";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="s-bg">
+  <div class="h-ser">
+    <p> <b>热门关键词：</b> {dede:hotwords num='6'/} </p>
+    <div class="s-inp">
+      <form action="/plus/search.php" method="post">
+        <input type="hidden" name="kwtype" value="0" />
+        <input type="text" class="inp01" id="seachkeywords" value="请输入关键词" name="q" onclick="this.value=''">
+        <input type="image" src="/skin/images/s_ss.gif" class="fl" value="submit">
+      </form>
+    </div>
+  </div>
+</div>
+<div class="he-box">
+  <h2></h2>
+  <div class="he-b">
+    <div class="mr_box">
+      <div class="he">
+        <ul>
+          {dede:arclist typeid=4}
+          <li><a href="[field:arcurl/]" title="[field:title/]"><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"/></a></li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+    <script language="javascript">
+         jQuery(".he-b  .mr_box").slide({titCell:"",mainCell:".he ul",autoPage:true,effect:"leftLoop",autoPlay:true,vis:4});
+        </script> 
+  </div>
+</div>
+<div class="pro-box">
+  <h2></h2>
+  <div class="product">
+    <div class="pro-left">
+      <dl>
+        <dt>
+          <h3></h3>
+        </dt>
+        {dede:channel type=son typeid=11}
+        <dd><a href="[field:typeurl/]">[field:typename/]</a></dd>
+        {/dede:channel}
+      </dl>
+    </div>
+    <div class="pro-right">
+      <ul>
+        {dede:arclist row=6 typeid=11}
+        <li><a href="[field:arcurl/]" title="[field:title/]"><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"/><span>[field:title/]</span></a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="tong1-box">
+  <div class="tong1">
+    <div class="t1"> <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=12345678&amp;site=qq&amp;menu=yes"></a> </div>
+  </div>
+</div>
+<div class="you-box">
+  <div class="you-b">
+    <div class="youshi">
+      <dl class="you01">
+        <dt><img src="/skin/images/you01.png"></dt>
+        <dd>多年来专注于商展一站式服务，并辐射周围相关产品，品图已发展成为立足于北京，服务全国的多元化复合性商展装饰装修企业，曾为包括瑞恩钻饰、中国工艺、ZA、卡诺娇、玫而美在内多家知名品牌服务过。</dd>
+      </dl>
+      <dl class="you02">
+        <dt><img src="/skin/images/you02.png"></dt>
+        <dd>从设计源头到出厂安装，公司实行全程质量跟踪记录，专柜的生产流程配有质量跟踪单，保证每个环节能严格把关，按时按质安装到位，保障品牌连锁店及时开业。近期成立了服装展柜研发小组。</dd>
+      </dl>
+      <dl class="you03">
+        <dt><img src="/skin/images/you03.png"></dt>
+        <dd>从原材料采购到生产工序及产品包装，经层层优化，保证质量的同时，成本降到极致，其中材料采购成本降10%，人工节省20%，材料耗损降低10%，包装节省30%。</dd>
+      </dl>
+      <dl class="you04">
+        <dt><img src="/skin/images/you04.png"></dt>
+        <dd>7*24小时物流配送、安装，北京、上海、成都、华南地区安装直接覆盖，服务有口皆碑专业的售后服务团队，贴心服务，定期回访跟进展示状况，为你解决一切问题。</dd>
+      </dl>
+    </div>
+  </div>
+</div>
+<div class="tong2-box">
+  <div class="tong2">
+    <div class="t2"> <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=12345678&amp;site=qq&amp;menu=yes"></a> </div>
+  </div>
+</div>
+<div class="anli">
+  <h2></h2>
+  <ul>
+    {dede:arclist row=5 typeid=7}
+    <li><a href="[field:arcurl/]" title="[field:title/]"><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"/><span>[field:title/]</span></a></li>
+    {/dede:arclist}
+    <li>{dede:type typeid=7}<a href="[field:typelink/]"><img src="/skin/images/anli06.png"></a>{/dede:type}</li>
+  </ul>
+</div>
+<script>
+	n=0;
+	$(".anli ul li span").hide();
+	$(".anli ul li").mouseenter(function(){
+		n=$(this).index()
+		$(".anli ul li span").eq(n).show();
+		
+		});
+	 $(".anli ul li").mouseleave(function(){
+		 n=$(this).index()
+		 $(".anli ul li span").eq(n).hide();
+		 })	
+	
+</script>
+<div class="abo-box">
+  <h2></h2>
+  <div class="abo">
+    <div class="abo-tu">{dede:type typeid=1}<a href="[field:typelink/]"><img src="/skin/images/abo.png"></a>{/dede:type}</div>
+    <div class="m-wz">
+      <h3><a href="{dede:type typeid=3}[field:typelink /]{/dede:type}">广州某某装饰工程有限公司<em>展柜定制首选品牌</em></a></h3>
+      <p>{dede:sql sql='Select content from dede_arctype where id=1'}[field:content function='cn_substr(html2text(@me),600)'/]{/dede:sql}......{dede:type typeid=1}<a href="[field:typelink/]" >【查看详情】</a>{/dede:type}</p>
+    </div>
+  </div>
+</div>
+<div class="zixun">
+  <div class="zi-l">
+    <h2> <span class="more1">{dede:type typeid=24}<a href="[field:typelink/]">MORE+</a>{/dede:type}</span> {dede:type typeid=24}<a href="[field:typelink/]">[field:typename/]<em>/ News</em></a>{/dede:type} </h2>
+    <div class="zxc">
+      <p>{dede:type typeid=24}<a href="[field:typelink/]"><img src="/skin/images/zi01.png"></a>{/dede:type}</p>
+      <ul class="lst4">
+        {dede:arclist row=4 typeid=24 titlelen=50}
+        <li><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+  </div>
+  <div class="zi-l">
+    <h2> <span class="more1">{dede:type typeid=25}<a href="[field:typelink/]">MORE+</a>{/dede:type}</span> {dede:type typeid=25}<a href="[field:typelink/]">[field:typename/]<em>/ News</em></a>{/dede:type} </h2>
+    <div class="zxc">
+      <p><a href="{dede:type typeid=18}[field:typelink /]{/dede:type}"><img src="/skin/images/zi01.png"></a></p>
+      <ul class="lst4">
+        {dede:arclist row=4 typeid=25 titlelen=50}
+        <li><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+  </div>
+  <div class="wend">
+    <h2> <span class="more1">{dede:type typeid=30}<a href="[field:typelink/]">MORE+</a>{/dede:type}</span> {dede:type typeid=30}<a href="[field:typelink/]"> [field:typename/]<em>/ FAQ</em></a>{/dede:type} </h2>
+    <div class="wen"> {dede:arclist row=3 typeid=30}
+      <dl>
+        <dt><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></dt>
+        <dd>[field:description function="cn_substr(@me,200)"/]...</dd>
+      </dl>
+      {/dede:arclist} </div>
+  </div>
+</div>
+<div class="yq-box">
+  <div class="yq">
+    <div class="yq-top"> <span><a href="">申请友情链接&gt;&gt;</a></span>
+      <h3><a href=""><img src="/skin/images/yq_bt.gif">友情链接</a></h3>
+    </div>
+    <div class="yq-con"> {dede:flink titlelen='20' row='10' type='text'}[field:link /]{/dede:flink} </div>
+  </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

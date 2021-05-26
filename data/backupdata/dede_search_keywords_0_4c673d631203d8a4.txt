@@ -1,0 +1,2 @@
+INSERT INTO `dede_search_keywords` VALUES('1','sdf','sdf','1','0','1474256629','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','8.6万','8.6万','1','1','1474265900','0','0');

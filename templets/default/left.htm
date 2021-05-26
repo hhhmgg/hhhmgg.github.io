@@ -1,0 +1,30 @@
+<div class="main_left">
+  <div class="leftitem">
+    <div class="tit">栏目导航</div>
+    <div class="cates">
+      <dl>
+        <dt>{dede:field name='typeid' function="GetTopTypename(@me)"/}</dt>
+        {dede:channel type=son}
+        <dd><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></dd>
+        {/dede:channel}
+      </dl>
+    </div>
+  </div>
+  <div class="leftitem">
+    <div class="tit"> 联系我们 </div>
+    <div class="lianxi">
+      <dl>
+        <dt>
+          <div>服务热线</div>
+          <div class="telx">020-66889888</div>
+        </dt>
+        <!--大类-->
+        <dd>吴总：13978789988</dd>
+        <dd>小邵：13998987878</dd>
+        <dd>QQ：12345678</dd>
+        <dd>邮箱：admin@qq.com</dd>
+        <dd> 地址：广东省广州市灞桥区新筑街办 </dd>
+      </dl>
+    </div>
+  </div>
+</div>
